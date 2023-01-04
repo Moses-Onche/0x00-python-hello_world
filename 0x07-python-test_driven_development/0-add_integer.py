@@ -9,7 +9,7 @@ This function add two integers. Return an integer
 def add_integer(a, b=98):
     """
     Check if the parameters are float, if so, casted it to integer.
-    If parameters are integer or float), raise an exception with a message. 
+    If parameters are integer or float), raise an exception with a message.
     """
     if type(a) not in [int, float]:
         raise TypeError('a must be an integer')
