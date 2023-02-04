@@ -1,4 +1,4 @@
-# Python - import & modules
+# Python - Import & Modules
 
 ## Learning Objectives
  
