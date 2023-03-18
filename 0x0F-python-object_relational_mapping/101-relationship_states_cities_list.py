@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-List all State objects with corresponding City objects.
+List all State object with corresponding City objects.
 """
+import sys
 from relationship_state import Base, State
 from relationship_city import City
 from sqlalchemy import (create_engine)
