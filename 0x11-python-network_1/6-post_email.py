@@ -3,11 +3,12 @@
 and displays the value of the X-Request-Id variable found
 in the header ofthe response.
 """
-import sys
-import urllib.request
+from sys import argv
+import requests
 
 if __name__ == "__main__":
-    URL = sys.argv[1]
-    req = urllib.request.Request(URL)
-    with urllib.request.urlopen(req) as response:
-        print(dict(response.headers).get("X-Request-Id"))
+    URL = argv[1]
+    item = {"email": argv[2]}
+
+    resp = requests.post(URL, data=item)
+    print(resp.text)
