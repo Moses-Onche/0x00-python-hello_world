@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/node
 /* This script prints the number of times a movie character appeared. */
 const request = require('request');
 request(process.argv[2], function (error, response, body) {
