@@ -11,7 +11,7 @@ request.get(requestUrl + uid, function (error, res, body) {
   const data = JSON.parse(body);
   const dd = data.characters;
   for (const count of dd) {
-    req.get(count, function (error, res, body1) {
+    request.get(count, function (error, res, body1) {
       if (error) {
         console.log(error);
       }
